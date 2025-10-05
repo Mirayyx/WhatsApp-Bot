@@ -1,0 +1,13 @@
+{
+  "name": "miray-whatsapp-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.6.0",
+    "express": "^4.19.2",
+    "pino": "^9.0.0"
+  }
+}
