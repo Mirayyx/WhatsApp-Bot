@@ -1,0 +1,17 @@
+/* Menggunakan font Inter dari Google Fonts */
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  /* Hapus font-family karena sudah diatur di body class di HTML */
+  transition: background 0.3s;
+}
+
+/* Efek hover yang lebih subtle dan premium */
+button {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); /* Custom easing */
+}
+button:hover {
+  /* Hapus transform: scale(1.02); karena sudah diatur di Tailwind class di HTML */
+}
