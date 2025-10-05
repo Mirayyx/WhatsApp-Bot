@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>👾 Miray WhatsApp Bot Panel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-950 text-white font-inter"> <div class="min-h-screen flex flex-col items-center justify-center p-4 sm:p-6">
+    <div class="bg-slate-900 border border-slate-800 p-8 rounded-3xl shadow-2xl shadow-slate-900/50 w-full max-w-lg transition-all duration-300 hover:shadow-slate-700/30"> <h1 class="text-3xl font-extrabold text-center mb-6 text-emerald-400 flex items-center justify-center gap-3">
+        👾 Miray WhatsApp Bot <span class="text-slate-400">Dashboard</span>
+      </h1>
+
+      <div id="statusBox" class="text-center mb-5 p-3 rounded-xl text-sm border border-slate-700 bg-slate-800/50 flex items-center justify-center gap-2 font-medium text-slate-300">
+        <span class="text-yellow-400">🟡</span> Memuat status koneksi...
+      </div>
+
+      <button id="reloadBtn" class="w-full py-3 rounded-xl mb-6 font-semibold bg-indigo-600 hover:bg-indigo-500 shadow-lg shadow-indigo-600/30 transform hover:scale-[1.01] transition-all duration-200">
+        🔄 Reload Plugin
+      </button>
+
+      <div class="space-y-4">
+        <h2 class="text-xl font-semibold mb-3 border-b border-slate-700 pb-2 text-slate-200">✉️ Kirim Pesan Cepat</h2>
+        
+        <div>
+            <label for="number" class="block text-sm font-medium mb-1 text-slate-400">Nomor WhatsApp (628xxx)</label>
+            <input 
+                id="number" 
+                class="w-full p-3 rounded-xl bg-slate-800 border border-slate-700 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-all duration-200 placeholder-slate-500" 
+                placeholder="628xxxxxxxxxx" 
+            />
+        </div>
+        
+        <div>
+            <label for="message" class="block text-sm font-medium mb-1 text-slate-400">Isi Pesan</label>
+            <textarea 
+                id="message" 
+                class="w-full p-3 h-28 rounded-xl bg-slate-800 border border-slate-700 focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-all duration-200 resize-none placeholder-slate-500" 
+                placeholder="Tulis pesan yang akan dikirim..."
+            ></textarea>
+        </div>
+        
+        <button id="sendBtn" class="w-full py-3 rounded-xl font-bold bg-emerald-600 hover:bg-emerald-500 shadow-xl shadow-emerald-600/30 transform hover:scale-[1.01] transition-all duration-200">
+          🚀 Kirim Pesan
+        </button>
+      </div>
+
+      <p id="result" class="text-center mt-5 p-3 rounded-lg text-sm bg-slate-800 text-slate-400 border border-slate-700 hidden" aria-live="polite">
+        </p>
+    </div>
+    <footer class="mt-6 text-sm text-slate-600">
+        Bot by Miray | Simple & Powerful
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+      </html>
+      
